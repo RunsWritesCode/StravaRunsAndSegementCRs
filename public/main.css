@@ -1,0 +1,101 @@
+h1 {
+  font-family: 'Merienda One', cursive;
+  color: white;
+}
+
+h2 {
+  font-family: 'Merienda One', cursive;
+  background-color: #c7dbf9;
+  padding: 10px;
+
+}
+
+body {
+}
+
+#main div {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  height: 150px;
+  width: 250px;
+}
+
+#main {
+  margin: 0 auto;
+}
+
+#koms div {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  height: 150px;
+  width: 250px;
+}
+
+#koms {
+  margin: 0 auto;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+  width: 100%;
+}
+
+#act_name {
+  font-family: Merriweather;
+  color: #022691;
+}
+
+#distance {
+  font-family: Merriweather;
+  color: #004c11;
+}
+
+#time {
+  font-family: Merriweather;
+  color: #1d5984;
+}
+
+#elevation {
+  font-family: Merriweather;
+  color: #ad1a00;
+}
+
+.embed-container {
+position: relative;
+padding-bottom: 56.3%;
+height: 0;
+overflow: hidden;
+max-width: 100%;
+height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+position: absolute;
+width: 100%;
+top: 0;
+left: 0;
+height: 100%;
+}
+
+/* swapped image for video */
+/* IMG.banner {
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
