@@ -45,6 +45,7 @@ var renderKoms = function(allKoms) {
 
 var createListItem = function(singleActivity) {
   var insideDiv = document.createElement('div');
+  insideDiv.style.backgroundColor = backGroundRunType(singleActivity.workout_type)
   var pTag = document.createElement('p');
   pTag.innerHTML = singleActivity.name;
   pTag.setAttribute('id', 'act_name');
@@ -81,19 +82,17 @@ var createKomsItem = function(kom) {
 
   return insideKomDiv
 }
-// create profile section
 
-// inc. name, profile_medium,
-//
-//   var fourWeekAverage = function(activities) {
-//     total_distance = 0
-//     activities.forEach(function(element) {
-//       total_distance += activity.distance;
-//       return total_distance;
-//   });
-//   var statsDiv = document.getElementById('stats');
-//   statsDiv.innerText = total_distance / 4;
-//   }
+
+var backGroundRunType = function(workoutType) {
+  console.log(workoutType);
+  var colourMap = {
+    0: "#4dd69d",
+    2: "#3192bc",
+    3: "#fc4c02",
+  }
+  return colourMap[workoutType] || "#4dd69d";
+}
 
 
 
@@ -112,3 +111,22 @@ var convertToTime = function(moving_time) {
 
 
 window.addEventListener('load', app);
+
+
+
+
+
+
+// create profile section
+
+// inc. name, profile_medium,
+//
+//   var fourWeekAverage = function(activities) {
+//     total_distance = 0
+//     activities.forEach(function(element) {
+//       total_distance += activity.distance;
+//       return total_distance;
+//   });
+//   var statsDiv = document.getElementById('stats');
+//   statsDiv.innerText = total_distance / 4;
+//   }
