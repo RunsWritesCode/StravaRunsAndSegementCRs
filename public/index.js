@@ -45,7 +45,7 @@ var renderKoms = function(allKoms) {
 
 var createListItem = function(singleActivity) {
   var insideDiv = document.createElement('div');
-  insideDiv.style.backgroundColor = backGroundRunType(singleActivity.workout_type)
+  insideDiv.style.backgroundColor = backGroundRunType(singleActivity.workout_type);
   var pTag = document.createElement('p');
   pTag.innerHTML = singleActivity.name;
   pTag.setAttribute('id', 'act_name');
@@ -87,11 +87,11 @@ var createKomsItem = function(kom) {
 var backGroundRunType = function(workoutType) {
   console.log(workoutType);
   var colourMap = {
-    0: "#4dd69d",
-    2: "#3192bc",
-    3: "#fc4c02",
+    0: "#4dd69d80",
+    2: "#3192bc80",
+    3: "#fc4c0280",
   }
-  return colourMap[workoutType] || "#4dd69d";
+  return colourMap[workoutType] || "#4dd69d80";
 }
 
 
